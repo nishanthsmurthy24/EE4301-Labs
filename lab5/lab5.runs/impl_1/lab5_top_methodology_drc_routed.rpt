@@ -1,0 +1,549 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Tue Jul 25 12:43:49 2023
+| Host         : IronPatriot running 64-bit major release  (build 9200)
+| Command      : report_methodology -file lab5_top_methodology_drc_routed.rpt -pb lab5_top_methodology_drc_routed.pb -rpx lab5_top_methodology_drc_routed.rpx
+| Design       : lab5_top
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 89
++-----------+------------------+------------------------------------------+------------+
+| Rule      | Severity         | Description                              | Violations |
++-----------+------------------+------------------------------------------+------------+
+| TIMING-17 | Critical Warning | Non-clocked sequential cell              | 16         |
+| LUTAR-1   | Warning          | LUT drives async reset alert             | 16         |
+| TIMING-16 | Warning          | Large setup violation                    | 4          |
+| TIMING-20 | Warning          | Non-clocked latch                        | 20         |
+| XDCH-2    | Warning          | Same min and max delay values on IO port | 32         |
+| LATCH-1   | Advisory         | Existing latches in the design           | 1          |
++-----------+------------------+------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-17#1 Critical Warning
+Non-clocked sequential cell  
+The clock pin LFSR1/q_reg[0]_C/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Critical Warning
+Non-clocked sequential cell  
+The clock pin LFSR1/q_reg[0]_P/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#3 Critical Warning
+Non-clocked sequential cell  
+The clock pin LFSR1/q_reg[1]_C/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#4 Critical Warning
+Non-clocked sequential cell  
+The clock pin LFSR1/q_reg[1]_P/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#5 Critical Warning
+Non-clocked sequential cell  
+The clock pin LFSR1/q_reg[2]_C/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#6 Critical Warning
+Non-clocked sequential cell  
+The clock pin LFSR1/q_reg[2]_P/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#7 Critical Warning
+Non-clocked sequential cell  
+The clock pin LFSR1/q_reg[3]_C/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#8 Critical Warning
+Non-clocked sequential cell  
+The clock pin LFSR1/q_reg[3]_P/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#9 Critical Warning
+Non-clocked sequential cell  
+The clock pin LFSR2/q_reg[0]_C/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#10 Critical Warning
+Non-clocked sequential cell  
+The clock pin LFSR2/q_reg[0]_P/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#11 Critical Warning
+Non-clocked sequential cell  
+The clock pin LFSR2/q_reg[1]_C/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#12 Critical Warning
+Non-clocked sequential cell  
+The clock pin LFSR2/q_reg[1]_P/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#13 Critical Warning
+Non-clocked sequential cell  
+The clock pin LFSR2/q_reg[2]_C/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#14 Critical Warning
+Non-clocked sequential cell  
+The clock pin LFSR2/q_reg[2]_P/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#15 Critical Warning
+Non-clocked sequential cell  
+The clock pin LFSR2/q_reg[3]_C/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#16 Critical Warning
+Non-clocked sequential cell  
+The clock pin LFSR2/q_reg[3]_P/C is not reached by a timing clock
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell LFSR1/q_reg[0]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) LFSR1/q_reg[0]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell LFSR1/q_reg[0]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) LFSR1/q_reg[0]_C/CLR, LFSR1/q_reg[0]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell LFSR1/q_reg[1]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) LFSR1/q_reg[1]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
+LUT drives async reset alert  
+LUT cell LFSR1/q_reg[1]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) LFSR1/q_reg[1]_C/CLR, LFSR1/q_reg[1]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#5 Warning
+LUT drives async reset alert  
+LUT cell LFSR1/q_reg[2]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) LFSR1/q_reg[2]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#6 Warning
+LUT drives async reset alert  
+LUT cell LFSR1/q_reg[2]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) LFSR1/q_reg[2]_C/CLR, LFSR1/q_reg[2]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#7 Warning
+LUT drives async reset alert  
+LUT cell LFSR1/q_reg[3]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) LFSR1/q_reg[3]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#8 Warning
+LUT drives async reset alert  
+LUT cell LFSR1/q_reg[3]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) LFSR1/q_reg[3]_C/CLR, LFSR1/q_reg[3]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#9 Warning
+LUT drives async reset alert  
+LUT cell LFSR2/q_reg[0]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) LFSR2/q_reg[0]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#10 Warning
+LUT drives async reset alert  
+LUT cell LFSR2/q_reg[0]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) LFSR2/q_reg[0]_C/CLR, LFSR2/q_reg[0]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#11 Warning
+LUT drives async reset alert  
+LUT cell LFSR2/q_reg[1]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) LFSR2/q_reg[1]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#12 Warning
+LUT drives async reset alert  
+LUT cell LFSR2/q_reg[1]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) LFSR2/q_reg[1]_C/CLR, LFSR2/q_reg[1]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#13 Warning
+LUT drives async reset alert  
+LUT cell LFSR2/q_reg[2]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) LFSR2/q_reg[2]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#14 Warning
+LUT drives async reset alert  
+LUT cell LFSR2/q_reg[2]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) LFSR2/q_reg[2]_C/CLR, LFSR2/q_reg[2]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#15 Warning
+LUT drives async reset alert  
+LUT cell LFSR2/q_reg[3]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) LFSR2/q_reg[3]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#16 Warning
+LUT drives async reset alert  
+LUT cell LFSR2/q_reg[3]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) LFSR2/q_reg[3]_C/CLR, LFSR2/q_reg[3]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -1.269 ns between SEG7/refresh_counter_reg[15]/C (clocked by sys_clk_pin) and Anode[0] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -1.391 ns between SEG7/refresh_counter_reg[14]_replica/C (clocked by sys_clk_pin) and Anode[1] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -1.442 ns between SEG7/refresh_counter_reg[15]/C (clocked by sys_clk_pin) and Anode[2] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -1.496 ns between SEG7/refresh_counter_reg[14]_replica/C (clocked by sys_clk_pin) and Anode[3] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch LFSR1/q_reg[0]_LDC cannot be properly analyzed as its control pin LFSR1/q_reg[0]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch LFSR1/q_reg[1]_LDC cannot be properly analyzed as its control pin LFSR1/q_reg[1]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch LFSR1/q_reg[2]_LDC cannot be properly analyzed as its control pin LFSR1/q_reg[2]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch LFSR1/q_reg[3]_LDC cannot be properly analyzed as its control pin LFSR1/q_reg[3]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch LFSR2/q_reg[0]_LDC cannot be properly analyzed as its control pin LFSR2/q_reg[0]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch LFSR2/q_reg[1]_LDC cannot be properly analyzed as its control pin LFSR2/q_reg[1]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch LFSR2/q_reg[2]_LDC cannot be properly analyzed as its control pin LFSR2/q_reg[2]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch LFSR2/q_reg[3]_LDC cannot be properly analyzed as its control pin LFSR2/q_reg[3]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch SEG7/LED_BCD_reg[0] cannot be properly analyzed as its control pin SEG7/LED_BCD_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch SEG7/LED_BCD_reg[1] cannot be properly analyzed as its control pin SEG7/LED_BCD_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch SEG7/LED_BCD_reg[2] cannot be properly analyzed as its control pin SEG7/LED_BCD_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch SEG7/LED_BCD_reg[3] cannot be properly analyzed as its control pin SEG7/LED_BCD_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch SEG7/LED_BCD_reg[4] cannot be properly analyzed as its control pin SEG7/LED_BCD_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch SEG7/LED_out_reg[0] cannot be properly analyzed as its control pin SEG7/LED_out_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch SEG7/LED_out_reg[1] cannot be properly analyzed as its control pin SEG7/LED_out_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
+Non-clocked latch  
+The latch SEG7/LED_out_reg[2] cannot be properly analyzed as its control pin SEG7/LED_out_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#17 Warning
+Non-clocked latch  
+The latch SEG7/LED_out_reg[3] cannot be properly analyzed as its control pin SEG7/LED_out_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#18 Warning
+Non-clocked latch  
+The latch SEG7/LED_out_reg[4] cannot be properly analyzed as its control pin SEG7/LED_out_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#19 Warning
+Non-clocked latch  
+The latch SEG7/LED_out_reg[5] cannot be properly analyzed as its control pin SEG7/LED_out_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#20 Warning
+Non-clocked latch  
+The latch SEG7/LED_out_reg[6] cannot be properly analyzed as its control pin SEG7/LED_out_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+XDCH-2#1 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'Roll' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks sys_clk_pin] -add_delay 0.000 [get_ports -filter { NAME =~"*" && DIRECTION == "IN" }]
+W:/UMN/TA/EE4301-SS23/lab5/lab5.srcs/constrs_1/new/lab5_top.xdc (Line: 9)
+Related violations: <none>
+
+XDCH-2#2 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'clk' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks sys_clk_pin] -add_delay 0.000 [get_ports -filter { NAME =~"*" && DIRECTION == "IN" }]
+W:/UMN/TA/EE4301-SS23/lab5/lab5.srcs/constrs_1/new/lab5_top.xdc (Line: 9)
+Related violations: <none>
+
+XDCH-2#3 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'rst' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks sys_clk_pin] -add_delay 0.000 [get_ports -filter { NAME =~"*" && DIRECTION == "IN" }]
+W:/UMN/TA/EE4301-SS23/lab5/lab5.srcs/constrs_1/new/lab5_top.xdc (Line: 9)
+Related violations: <none>
+
+XDCH-2#4 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'seed1[0]' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks sys_clk_pin] -add_delay 0.000 [get_ports -filter { NAME =~"*" && DIRECTION == "IN" }]
+W:/UMN/TA/EE4301-SS23/lab5/lab5.srcs/constrs_1/new/lab5_top.xdc (Line: 9)
+Related violations: <none>
+
+XDCH-2#5 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'seed1[1]' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks sys_clk_pin] -add_delay 0.000 [get_ports -filter { NAME =~"*" && DIRECTION == "IN" }]
+W:/UMN/TA/EE4301-SS23/lab5/lab5.srcs/constrs_1/new/lab5_top.xdc (Line: 9)
+Related violations: <none>
+
+XDCH-2#6 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'seed1[2]' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks sys_clk_pin] -add_delay 0.000 [get_ports -filter { NAME =~"*" && DIRECTION == "IN" }]
+W:/UMN/TA/EE4301-SS23/lab5/lab5.srcs/constrs_1/new/lab5_top.xdc (Line: 9)
+Related violations: <none>
+
+XDCH-2#7 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'seed1[3]' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks sys_clk_pin] -add_delay 0.000 [get_ports -filter { NAME =~"*" && DIRECTION == "IN" }]
+W:/UMN/TA/EE4301-SS23/lab5/lab5.srcs/constrs_1/new/lab5_top.xdc (Line: 9)
+Related violations: <none>
+
+XDCH-2#8 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'seed2[0]' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks sys_clk_pin] -add_delay 0.000 [get_ports -filter { NAME =~"*" && DIRECTION == "IN" }]
+W:/UMN/TA/EE4301-SS23/lab5/lab5.srcs/constrs_1/new/lab5_top.xdc (Line: 9)
+Related violations: <none>
+
+XDCH-2#9 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'seed2[1]' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks sys_clk_pin] -add_delay 0.000 [get_ports -filter { NAME =~"*" && DIRECTION == "IN" }]
+W:/UMN/TA/EE4301-SS23/lab5/lab5.srcs/constrs_1/new/lab5_top.xdc (Line: 9)
+Related violations: <none>
+
+XDCH-2#10 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'seed2[2]' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks sys_clk_pin] -add_delay 0.000 [get_ports -filter { NAME =~"*" && DIRECTION == "IN" }]
+W:/UMN/TA/EE4301-SS23/lab5/lab5.srcs/constrs_1/new/lab5_top.xdc (Line: 9)
+Related violations: <none>
+
+XDCH-2#11 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'seed2[3]' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks sys_clk_pin] -add_delay 0.000 [get_ports -filter { NAME =~"*" && DIRECTION == "IN" }]
+W:/UMN/TA/EE4301-SS23/lab5/lab5.srcs/constrs_1/new/lab5_top.xdc (Line: 9)
+Related violations: <none>
+
+XDCH-2#12 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'Anode[0]' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks sys_clk_pin] -add_delay 0.000 [get_ports -filter { NAME =~ "*" && DIRECTION == "OUT" }]
+W:/UMN/TA/EE4301-SS23/lab5/lab5.srcs/constrs_1/new/lab5_top.xdc (Line: 10)
+Related violations: <none>
+
+XDCH-2#13 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'Anode[1]' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks sys_clk_pin] -add_delay 0.000 [get_ports -filter { NAME =~ "*" && DIRECTION == "OUT" }]
+W:/UMN/TA/EE4301-SS23/lab5/lab5.srcs/constrs_1/new/lab5_top.xdc (Line: 10)
+Related violations: <none>
+
+XDCH-2#14 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'Anode[2]' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks sys_clk_pin] -add_delay 0.000 [get_ports -filter { NAME =~ "*" && DIRECTION == "OUT" }]
+W:/UMN/TA/EE4301-SS23/lab5/lab5.srcs/constrs_1/new/lab5_top.xdc (Line: 10)
+Related violations: <none>
+
+XDCH-2#15 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'Anode[3]' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks sys_clk_pin] -add_delay 0.000 [get_ports -filter { NAME =~ "*" && DIRECTION == "OUT" }]
+W:/UMN/TA/EE4301-SS23/lab5/lab5.srcs/constrs_1/new/lab5_top.xdc (Line: 10)
+Related violations: <none>
+
+XDCH-2#16 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'LED_out[0]' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks sys_clk_pin] -add_delay 0.000 [get_ports -filter { NAME =~ "*" && DIRECTION == "OUT" }]
+W:/UMN/TA/EE4301-SS23/lab5/lab5.srcs/constrs_1/new/lab5_top.xdc (Line: 10)
+Related violations: <none>
+
+XDCH-2#17 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'LED_out[1]' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks sys_clk_pin] -add_delay 0.000 [get_ports -filter { NAME =~ "*" && DIRECTION == "OUT" }]
+W:/UMN/TA/EE4301-SS23/lab5/lab5.srcs/constrs_1/new/lab5_top.xdc (Line: 10)
+Related violations: <none>
+
+XDCH-2#18 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'LED_out[2]' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks sys_clk_pin] -add_delay 0.000 [get_ports -filter { NAME =~ "*" && DIRECTION == "OUT" }]
+W:/UMN/TA/EE4301-SS23/lab5/lab5.srcs/constrs_1/new/lab5_top.xdc (Line: 10)
+Related violations: <none>
+
+XDCH-2#19 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'LED_out[3]' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks sys_clk_pin] -add_delay 0.000 [get_ports -filter { NAME =~ "*" && DIRECTION == "OUT" }]
+W:/UMN/TA/EE4301-SS23/lab5/lab5.srcs/constrs_1/new/lab5_top.xdc (Line: 10)
+Related violations: <none>
+
+XDCH-2#20 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'LED_out[4]' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks sys_clk_pin] -add_delay 0.000 [get_ports -filter { NAME =~ "*" && DIRECTION == "OUT" }]
+W:/UMN/TA/EE4301-SS23/lab5/lab5.srcs/constrs_1/new/lab5_top.xdc (Line: 10)
+Related violations: <none>
+
+XDCH-2#21 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'LED_out[5]' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks sys_clk_pin] -add_delay 0.000 [get_ports -filter { NAME =~ "*" && DIRECTION == "OUT" }]
+W:/UMN/TA/EE4301-SS23/lab5/lab5.srcs/constrs_1/new/lab5_top.xdc (Line: 10)
+Related violations: <none>
+
+XDCH-2#22 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'LED_out[6]' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks sys_clk_pin] -add_delay 0.000 [get_ports -filter { NAME =~ "*" && DIRECTION == "OUT" }]
+W:/UMN/TA/EE4301-SS23/lab5/lab5.srcs/constrs_1/new/lab5_top.xdc (Line: 10)
+Related violations: <none>
+
+XDCH-2#23 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'second[0]' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks sys_clk_pin] -add_delay 0.000 [get_ports -filter { NAME =~ "*" && DIRECTION == "OUT" }]
+W:/UMN/TA/EE4301-SS23/lab5/lab5.srcs/constrs_1/new/lab5_top.xdc (Line: 10)
+Related violations: <none>
+
+XDCH-2#24 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'second[1]' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks sys_clk_pin] -add_delay 0.000 [get_ports -filter { NAME =~ "*" && DIRECTION == "OUT" }]
+W:/UMN/TA/EE4301-SS23/lab5/lab5.srcs/constrs_1/new/lab5_top.xdc (Line: 10)
+Related violations: <none>
+
+XDCH-2#25 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'second[2]' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks sys_clk_pin] -add_delay 0.000 [get_ports -filter { NAME =~ "*" && DIRECTION == "OUT" }]
+W:/UMN/TA/EE4301-SS23/lab5/lab5.srcs/constrs_1/new/lab5_top.xdc (Line: 10)
+Related violations: <none>
+
+XDCH-2#26 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'second[3]' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks sys_clk_pin] -add_delay 0.000 [get_ports -filter { NAME =~ "*" && DIRECTION == "OUT" }]
+W:/UMN/TA/EE4301-SS23/lab5/lab5.srcs/constrs_1/new/lab5_top.xdc (Line: 10)
+Related violations: <none>
+
+XDCH-2#27 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'second[4]' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks sys_clk_pin] -add_delay 0.000 [get_ports -filter { NAME =~ "*" && DIRECTION == "OUT" }]
+W:/UMN/TA/EE4301-SS23/lab5/lab5.srcs/constrs_1/new/lab5_top.xdc (Line: 10)
+Related violations: <none>
+
+XDCH-2#28 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'sum[0]' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks sys_clk_pin] -add_delay 0.000 [get_ports -filter { NAME =~ "*" && DIRECTION == "OUT" }]
+W:/UMN/TA/EE4301-SS23/lab5/lab5.srcs/constrs_1/new/lab5_top.xdc (Line: 10)
+Related violations: <none>
+
+XDCH-2#29 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'sum[1]' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks sys_clk_pin] -add_delay 0.000 [get_ports -filter { NAME =~ "*" && DIRECTION == "OUT" }]
+W:/UMN/TA/EE4301-SS23/lab5/lab5.srcs/constrs_1/new/lab5_top.xdc (Line: 10)
+Related violations: <none>
+
+XDCH-2#30 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'sum[2]' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks sys_clk_pin] -add_delay 0.000 [get_ports -filter { NAME =~ "*" && DIRECTION == "OUT" }]
+W:/UMN/TA/EE4301-SS23/lab5/lab5.srcs/constrs_1/new/lab5_top.xdc (Line: 10)
+Related violations: <none>
+
+XDCH-2#31 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'sum[3]' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks sys_clk_pin] -add_delay 0.000 [get_ports -filter { NAME =~ "*" && DIRECTION == "OUT" }]
+W:/UMN/TA/EE4301-SS23/lab5/lab5.srcs/constrs_1/new/lab5_top.xdc (Line: 10)
+Related violations: <none>
+
+XDCH-2#32 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'sum[4]' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks sys_clk_pin] -add_delay 0.000 [get_ports -filter { NAME =~ "*" && DIRECTION == "OUT" }]
+W:/UMN/TA/EE4301-SS23/lab5/lab5.srcs/constrs_1/new/lab5_top.xdc (Line: 10)
+Related violations: <none>
+
+LATCH-1#1 Advisory
+Existing latches in the design  
+There are 20 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
+Related violations: <none>
+
+

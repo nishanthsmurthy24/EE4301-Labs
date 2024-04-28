@@ -1,0 +1,8 @@
+Time resolution is 1 ps
+a = xxxxxxxx, b = xxxxxxxx, ctrl = x
+s = xxxxxxxx, cout = x
+a = 00001100, b = 00000111, ctrl = 0
+s = 00010011, cout = 0
+a = 00001100, b = 00000111, ctrl = 1
+s = 00000101, cout = 1
+End Simulation
